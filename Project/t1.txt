@@ -1,0 +1,49 @@
+-------Topics from abstracts------------------------------
+
+Topic 0: model neural time models results simple information study present paper behavior networks work simulations process network different properties conditions
+Topic 1: recognition network speech neural image object images context word performance trained networks segmentation sequence convolutional architecture accuracy independent speaker
+Topic 2: data feature space based analysis input features using algorithm representation vectors structure vector learning set dimensional clustering distance problem
+Topic 3: classification data training algorithm classifier performance method based error classifiers new class set decision problem algorithms selection methods probability
+Topic 4: propagation networks belief nodes node graph gaussian matrix network single correlation mean probability graphs algorithm zero posterior codes conditional
+Topic 5: problem algorithm matrix convex algorithms guarantees low risk sparse optimization rank optimal general regret time graph high times performance
+Topic 6: information signal spike noise signals auditory rate neuron frequency input time model sound firing train channel temporal onset single
+Topic 7: error training set validation data generalization distribution prediction output line method function estimate input confidence variance regression average cross
+Topic 8: analog network neural chip time circuit vlsi parallel networks processing implementation circuits hardware implemented digital cmos neuron real silicon
+Topic 9: model models inference bayesian markov distribution probabilistic approach algorithm variational posterior variables methods using based hidden sampling carlo latent
+Topic 10: neurons input cell activity synaptic patterns network phase neural cells inputs model neuron cortical connections firing response biological sensory
+Topic 11: network networks neural learning training using layer units weights hidden trained input performance time output used net weight architecture
+Topic 12: state learning value policy reinforcement function model time actions interpolation action decision states models step iteration goal used using
+Topic 13: rules al node et representation structure rule level nodes representations language connectionist legal grammar languages systems tree symbolic soft
+Topic 14: visual model motion cells eye spatial cortex field fields image human orientation direction neurons receptive responses images objects properties
+Topic 15: data learning problem based real large paper method results new methods approach problems proposed propose experiments performance demonstrate datasets
+Topic 16: model data em gaussian estimation using algorithm noise models mixture parameters linear nonlinear density method non likelihood function paper
+Topic 17: number linear learning results complexity bounds case bound functions function size given examples class loss distribution order sample lower
+Topic 18: learning control based systems learn dynamic using task problem dynamics used motor robot paper reinforcement learned adaptive use trajectories
+Topic 19: algorithm learning gradient algorithms convergence problems stochastic function optimization descent methods method adaptive new order local rate non functions
+
+
+
+
+--------Topics from papers---------------------------------------------------------------------------------------------------------------------
+
+
+Topic 0: network model networks layer neural image input output training deep layers convolutional using hidden sequence recurrent used lstm models
+Topic 1: section theorem algorithm following results proof result paper appendix analysis main supplementary properties lemma material follows details conditions assumptions
+Topic 2: distribution model posterior gaussian inference models likelihood sampling variational latent parameters using process distributions prior mean variables markov random
+Topic 3: function problem convex functions loss non objective linear optimization set submodular solution norm defined smooth form case space distance
+Topic 4: xi log yi max min xk let exp vi ai xj zi si bi n1 wi pi ui ni
+Topic 5: set graph random node number nodes variables graphs edges tree edge given let variable partition size cluster words vertex
+Topic 6: learning work problem algorithms models approach problems data methods paper framework based model inference proposed new large related algorithm
+Topic 7: data set training points samples number sample given test distribution label probability model labels examples class point dataset random
+Topic 8: figure results performance data table experiments dataset test datasets error shows methods accuracy 10 method using set different training
+Topic 9: matrix rank vector low matrices norm random sparse noise tensor dimensional vectors entries covariance gaussian zero non product completion
+Topic 10: gradient stochastic arxiv descent optimization algorithm methods method edu abstract references 2015 preprint 2014 coordinate dual algorithms 15 convergence
+Topic 11: bound error bounds lower rate algorithm convergence regret log upper case optimal sample complexity theorem constant probability term approximation
+Topic 12: algorithm time step number size iteration search cost iterations using computational complexity update steps order solution running large computation
+Topic 13: model data different image object figure time images space human objects noise visual features high task brain using network
+Topic 14: time state decision information function action optimal value policy reward risk cost expected model agent game regret given problem
+Topic 15: 10 100 20 50 40 15 30 00 12 25 200 60 80 01 11 16 32 28 14
+Topic 16: xt log x1 st k2 let x0 min zt max yt xn pt c1 y1 ht dt s0 kf
+Topic 17: learning et al neural information networks systems nips processing advances 2014 deep inference 2012 2013 machine 20 15 bayesian
+Topic 18: pages learning machine conference research 2014 journal university ieee proceedings 2013 2012 international 2011 statistics theory 2010 computer science
+Topic 19: regression sparse linear 10 analysis 11 15 18 12 clustering 16 20 estimation 14 robust 17 logistic high 19
