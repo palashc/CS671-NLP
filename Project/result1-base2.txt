@@ -1,0 +1,34 @@
+---------------------------------------------
+1 ROUGE-1 Average_R: 0.76067 (95%-conf.int. 0.75729 - 0.76395)
+1 ROUGE-1 Average_P: 0.45226 (95%-conf.int. 0.44550 - 0.45849)
+1 ROUGE-1 Average_F: 0.54965 (95%-conf.int. 0.54453 - 0.55434)
+---------------------------------------------
+1 ROUGE-2 Average_R: 0.57562 (95%-conf.int. 0.57239 - 0.57863)
+1 ROUGE-2 Average_P: 0.34171 (95%-conf.int. 0.33638 - 0.34674)
+1 ROUGE-2 Average_F: 0.41507 (95%-conf.int. 0.41093 - 0.41884)
+---------------------------------------------
+1 ROUGE-3 Average_R: 0.49561 (95%-conf.int. 0.49258 - 0.49821)
+1 ROUGE-3 Average_P: 0.29365 (95%-conf.int. 0.28901 - 0.29803)
+1 ROUGE-3 Average_F: 0.35674 (95%-conf.int. 0.35313 - 0.36002)
+---------------------------------------------
+1 ROUGE-4 Average_R: 0.43850 (95%-conf.int. 0.43578 - 0.44091)
+1 ROUGE-4 Average_P: 0.25928 (95%-conf.int. 0.25522 - 0.26316)
+1 ROUGE-4 Average_F: 0.31508 (95%-conf.int. 0.31197 - 0.31795)
+---------------------------------------------
+1 ROUGE-L Average_R: 0.75093 (95%-conf.int. 0.74740 - 0.75436)
+1 ROUGE-L Average_P: 0.44660 (95%-conf.int. 0.43988 - 0.45288)
+1 ROUGE-L Average_F: 0.54267 (95%-conf.int. 0.53761 - 0.54752)
+---------------------------------------------
+1 ROUGE-W-1.2 Average_R: 0.24200 (95%-conf.int. 0.24020 - 0.24379)
+1 ROUGE-W-1.2 Average_P: 0.25394 (95%-conf.int. 0.25037 - 0.25719)
+1 ROUGE-W-1.2 Average_F: 0.23872 (95%-conf.int. 0.23711 - 0.24022)
+---------------------------------------------
+1 ROUGE-S* Average_R: 0.57037 (95%-conf.int. 0.56607 - 0.57474)
+1 ROUGE-S* Average_P: 0.21943 (95%-conf.int. 0.21276 - 0.22565)
+1 ROUGE-S* Average_F: 0.28675 (95%-conf.int. 0.28118 - 0.29205)
+---------------------------------------------
+1 ROUGE-SU* Average_R: 0.57184 (95%-conf.int. 0.56753 - 0.57620)
+1 ROUGE-SU* Average_P: 0.22044 (95%-conf.int. 0.21377 - 0.22667)
+1 ROUGE-SU* Average_F: 0.28806 (95%-conf.int. 0.28249 - 0.29336)
+
+{u'rouge_3_f_score_cb': 0.35313, u'rouge_3_f_score_ce': 0.36002, u'rouge_1_precision': 0.45226, u'rouge_l_precision_cb': 0.43988, u'rouge_l_f_score_cb': 0.53761, u'rouge_l_precision_ce': 0.45288, u'rouge_3_recall': 0.49561, u'rouge_3_precision_ce': 0.29803, u'rouge_w_1.2_f_score_ce': 0.24022, u'rouge_s*_f_score_ce': 0.29205, u'rouge_2_precision_ce': 0.34674, u'rouge_2_precision_cb': 0.33638, u'rouge_2_recall': 0.57562, u'rouge_w_1.2_f_score_cb': 0.23711, u'rouge_3_precision_cb': 0.28901, u'rouge_4_f_score_ce': 0.31795, u'rouge_2_precision': 0.34171, u'rouge_1_recall_cb': 0.75729, u'rouge_1_recall_ce': 0.76395, u'rouge_s*_precision': 0.21943, u'rouge_4_f_score_cb': 0.31197, u'rouge_s*_recall_cb': 0.56607, u'rouge_su*_recall_ce': 0.5762, u'rouge_w_1.2_f_score': 0.23872, u'rouge_w_1.2_recall': 0.242, u'rouge_su*_recall_cb': 0.56753, u'rouge_l_precision': 0.4466, u'rouge_2_recall_cb': 0.57239, u'rouge_s*_precision_ce': 0.22565, u'rouge_2_recall_ce': 0.57863, u'rouge_4_precision_cb': 0.25522, u'rouge_4_precision_ce': 0.26316, u'rouge_1_f_score': 0.54965, u'rouge_s*_recall_ce': 0.57474, u'rouge_4_recall_ce': 0.44091, u'rouge_su*_precision': 0.22044, u'rouge_1_recall': 0.76067, u'rouge_4_recall_cb': 0.43578, u'rouge_l_recall': 0.75093, u'rouge_l_f_score_ce': 0.54752, u'rouge_4_recall': 0.4385, u'rouge_su*_precision_ce': 0.22667, u'rouge_3_recall_cb': 0.49258, u'rouge_su*_recall': 0.57184, u'rouge_3_recall_ce': 0.49821, u'rouge_4_precision': 0.25928, u'rouge_4_f_score': 0.31508, u'rouge_su*_f_score_cb': 0.28249, u'rouge_3_f_score': 0.35674, u'rouge_2_f_score_cb': 0.41093, u'rouge_s*_precision_cb': 0.21276, u'rouge_3_precision': 0.29365, u'rouge_w_1.2_recall_ce': 0.24379, u'rouge_2_f_score_ce': 0.41884, u'rouge_su*_f_score': 0.28806, u'rouge_l_recall_ce': 0.75436, u'rouge_l_recall_cb': 0.7474, u'rouge_s*_recall': 0.57037, u'rouge_su*_precision_cb': 0.21377, u'rouge_w_1.2_precision': 0.25394, u'rouge_w_1.2_precision_cb': 0.25037, u'rouge_w_1.2_precision_ce': 0.25719, u'rouge_s*_f_score': 0.28675, u'rouge_1_precision_cb': 0.4455, u'rouge_su*_f_score_ce': 0.29336, u'rouge_1_precision_ce': 0.45849, u'rouge_l_f_score': 0.54267, u'rouge_2_f_score': 0.41507, u'rouge_1_f_score_ce': 0.55434, u'rouge_1_f_score_cb': 0.54453, u'rouge_w_1.2_recall_cb': 0.2402, u'rouge_s*_f_score_cb': 0.28118}
