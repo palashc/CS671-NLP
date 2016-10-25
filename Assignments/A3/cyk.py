@@ -8,7 +8,7 @@ and outputs whether the string can be generated from
 the grammar or not. If it can be, the parse tree is
 also returned as a nested list
 '''
-
+import pprint
 
 def readGrammar(filename):
 	#read grammar
@@ -26,7 +26,7 @@ def readGrammar(filename):
 
 
 def checkRHS(s, grammar):
-	ans = [rule['lhs'] for rule in grammar if tuple(s) == rule['rhs']]
+	ans = [rule['lhs'] for rule in grammar if (s, ) == rule['rhs']]
 	return ans
 
 def checkRHS2(combo, grammar):
@@ -44,7 +44,7 @@ def initTable(s, grammar):
 	return matrix
 
 def display(matrix, s):
-	print '\nTable ' + ' '.join([("%-4d" % i) for i in range(1, len(matrix))])
+	print '\nXX ' + ' '.join([("%-4d" % i) for i in range(1, len(matrix))])
 	for i in range(len(matrix)-1):
 		print "%d " % i,
 		for j in range(1, len(matrix)):
@@ -106,12 +106,14 @@ def toTree(matrix1, pointer, testString, j, i, k):
 	return tree
 
 
-grammar = readGrammar('test_grammar.txt')
+grammar = readGrammar('g2.txt')
 startSymbol = grammar[0]['lhs']
 #print grammar
 
 testString = raw_input("Enter string to be checked: \n")
-#testString = 'aaaaaaab'
+#testString = ["the", "kids", "opened", "the", "box", "on", "the", "floor"]
+#testString = ['book', 'the', 'flight', 'through', 'Houston']
+testString = testString.split(" ")
 
 length = len(testString)
 pointer = [None] * (length)
@@ -126,13 +128,13 @@ matrix = initTable(testString, grammar)
 
 matrix1 = completeTable(matrix, grammar, testString, False)
 
-#display(matrix1,testString)
+display(matrix1,testString)
 
 if startSymbol in matrix1[0][len(testString)]:
 	print "Yes"
+	tree = toTree(matrix1, pointer, testString, 0, length, 0)
+	print tree
 else:
 	print "NO"
 
-tree = toTree(matrix1, pointer, testString, 0, length, 0)
 
-print tree
