@@ -31,10 +31,9 @@ def checkRHS(s, grammar):
 
 def checkRHS2(combo, grammar):
 	ans = []
-	for c in combo:
-		for rule in grammar:
-			if rule['rhs']==c:
-				ans.append(rule['lhs'])
+	for rule in grammar:
+		if rule['rhs']==combo:
+			ans.append(rule['lhs'])
 	return ans
 
 def initTable(s, grammar):
@@ -69,15 +68,42 @@ def completeTable(matrix,grammar, s, trace=False):
 			end = start + span
 			for mid in range(start+1, end):
 				nt1, nt2 = matrix[start][mid], matrix[mid][end]
-				combo = genComb(nt1, nt2)
-				res = checkRHS2(combo, grammar)
-				if res:
-					matrix[start][end].extend(res)
+				# combo = genComb(nt1, nt2)
+				# res = checkRHS2(combo, grammar)
+				# if res:
+				# 	matrix[start][end].extend(res)
+				for l in range(len(matrix[start][mid])):
+					for m in range(len(matrix[mid][end])):
+						combo = (matrix[start][mid][l],matrix[mid][end][m])
+						res = checkRHS2(combo, grammar)
+						if res:
+							matrix[start][end].extend(res)
+							pointer[start][end].extend([[[start, mid, l], [mid, end, m]]]*len(res))
 
 
 	return matrix
 
+def toTree(matrix1, pointer, testString, j, i, k):
+	if pointer[j][i]:
+		rhs = []
+		#rhs1
+		nj1 = pointer[j][i][k][0][0]
+		ni1 = pointer[j][i][k][0][1]
+		nk1 = pointer[j][i][k][0][2]
+		rhs.append(toTree(matrix1, pointer, testString, nj1, ni1, nk1))
 
+		#rhs2
+		nj2 = pointer[j][i][k][1][0]
+		ni2 = pointer[j][i][k][1][1]
+		nk2 = pointer[j][i][k][1][2]
+		rhs.append(toTree(matrix1, pointer, testString, nj2, ni2, nk2))
+	else:
+		rhs = [testString[i-1]]
+
+	tree = [matrix1[j][i][k][0]]
+	tree.extend(rhs)
+
+	return tree
 
 
 grammar = readGrammar('test_grammar.txt')
@@ -86,6 +112,13 @@ startSymbol = grammar[0]['lhs']
 
 testString = raw_input("Enter string to be checked: \n")
 #testString = 'aaaaaaab'
+
+length = len(testString)
+pointer = [None] * (length)
+for j in range(length):
+    pointer[j] = [None] * (length+1)
+    for i in range(length+1):
+        pointer[j][i] = []
 
 
 
@@ -99,3 +132,7 @@ if startSymbol in matrix1[0][len(testString)]:
 	print "Yes"
 else:
 	print "NO"
+
+tree = toTree(matrix1, pointer, testString, 0, length, 0)
+
+print tree
